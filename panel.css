@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b2f7c1 0%, #4ecb71 100%);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  animation: fadeInDown 1s;
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(76, 203, 113, 0.2);
+  background: #fff;
+  object-fit: contain;
+  animation: popIn 1.2s;
+}
+
+.panel-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.panel {
+  background: #e6f9ec;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(76, 203, 113, 0.10);
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 0.8s forwards;
+}
+
+.panel.admin {
+  border-left: 8px solid #4ecb71;
+  animation-delay: 0.3s;
+}
+
+.panel.user {
+  border-left: 8px solid #b2f7c1;
+  background: #f0fff6;
+  animation-delay: 0.6s;
+}
+
+.panel h2 {
+  margin: 0 0 18px 0;
+  color: #2e7d4e;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.panel-link {
+  color: #219150;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 8px;
+  transition: color 0.2s, transform 0.2s, background 0.2s;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  font-family: Arial, sans-serif; /* Ensure font is Arial for both <a> and <button> */
+}
+
+.panel-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #4ecb71;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+
+.panel-link:hover,
+.panel-link:focus {
+  color: #4ecb71;
+  transform: translateX(4px) scale(1.05);
+}
+
+.panel-link:hover::after,
+.panel-link:focus::after {
+  width: 100%;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0;}
+  80% { transform: scale(1.1);}
+  100% { transform: scale(1); opacity: 1;}
+}
+
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0);}
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trash2Treasure</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Trash2Treasure Logo" class="logo-img" />
+      Trash2Treasure
+    </div>
+    <nav>
+      <a href="home.html"><span>🏠</span> Home</a>
+      <a href="tasks.html"><span>📝</span> Tasks</a>
+      <a href="Progress.html"><span>📊</span> Progress</a>
+      <a href="leaderboard.html"><span>🏆</span> Leaderboard</a>
+      <a href="#about"><span>❓</span> About Us</a>
+      <a href="#contact"><span>📋</span> Contact</a>
+    </nav>
+  </header>
+  <!-- Landing Section -->
+  <section class="landing-section">
+    <div class="main-title">Trash2Treasure</div>
+    <div class="main-desc">
+      Transform your environmental impact into a rewarding game! Complete eco-friendly tasks, earn points, and climb the leaderboard while saving our planet.
+    </div>
+    <div class="features">
+      <div class="feature-card" style="animation-delay:0s;">
+        <div class="feature-icon">10</div>
+        <div class="feature-title">Points Per Task</div>
+        <div class="feature-desc">Earn 10 points for every completed environmental task with video proof</div>
+      </div>
+      <div class="feature-card" style="animation-delay:0.15s;">
+        <div class="feature-icon">🏆</div>
+        <div class="feature-title">Top 100 Leaderboard</div>
+        <div class="feature-desc">Compete with others and showcase your environmental commitment</div>
+      </div>
+      <div class="feature-card" style="animation-delay:0.3s;">
+        <div class="feature-icon">🌱</div>
+        <div class="feature-title">Real Impact</div>
+        <div class="feature-desc">Make a genuine difference while tracking your environmental progress</div>
+      </div>
+    </div>
+    <button class="cta-btn" id="openModalBtn">Start Your Green Journey</button>
+  </section>
+  <!-- Tasks Section -->
+  <section class="tasks-section" id="tasksSection">
+    <h1 class="tasks-title">Environmental Tasks</h1>
+    <p class="tasks-desc">
+      Complete these eco-friendly tasks, submit video proof, and earn 10 points each. Every<br>
+      small action contributes to a bigger change!
+    </p>
+    <div class="tasks-list-table">
+      <div class="tasks-list-table-title">Available Tasks</div>
+      <table class="tasks-table">
+        <tbody>
+          <tr class="tasks-table-row">
+            <td class="tasks-table-num">1</td>
+            <td>
+              <div class="tasks-table-title">Plant a Tree</div>
+              <div class="tasks-table-tags">
+                <span class="tasks-table-tag">Conservation</span>
+                <span class="tasks-table-tag easy">Easy</span>
+              </div>
+            </td>
+            <td class="tasks-table-points">
+              <span class="tasks-table-points-badge">10 pts</span>
+            </td>
+          </tr>
+          <tr class="tasks-table-row">
+            <td class="tasks-table-num">2</td>
+            <td>
+              <div class="tasks-table-title">Road Cleanup</div>
+              <div class="tasks-table-tags">
+                <span class="tasks-table-tag">Cleanup</span>
+                <span class="tasks-table-tag medium">Medium</span>
+              </div>
+            </td>
+            <td class="tasks-table-points">
+              <span class="tasks-table-points-badge">10 pts</span>
+            </td>
+          </tr>
+          <tr class="tasks-table-row">
+            <td class="tasks-table-num">3</td>
+            <td>
+              <div class="tasks-table-title">River Cleanup</div>
+              <div class="tasks-table-tags">
+                <span class="tasks-table-tag">Cleanup</span>
+                <span class="tasks-table-tag hard">Hard</span>
+              </div>
+            </td>
+            <td class="tasks-table-points">
+              <span class="tasks-table-points-badge">10 pts</span>
+            </td>
+          </tr>
+          <tr class="tasks-table-row">
+            <td class="tasks-table-num">4</td>
+            <td>
+              <div class="tasks-table-title">Recycling Waste</div>
+              <div class="tasks-table-tags">
+                <span class="tasks-table-tag">Waste</span>
+                <span class="tasks-table-tag medium">Medium</span>
+              </div>
+            </td>
+            <td class="tasks-table-points">
+              <span class="tasks-table-points-badge">10 pts</span>
+            </td>
+          </tr>
+          <tr class="tasks-table-row">
+            <td class="tasks-table-num">5</td>
+            <td>
+              <div class="tasks-table-title">Animal Care</div>
+              <div class="tasks-table-tags">
+                <span class="tasks-table-tag">Awareness</span>
+                <span class="tasks-table-tag easy">Easy</span>
+              </div>
+            </td>
+            <td class="tasks-table-points">
+              <span class="tasks-table-points-badge">10 pts</span>
+            </td>
+          </tr>
+          <tr class="tasks-table-row">
+            <td class="tasks-table-num">6</td>
+            <td>
+              <div class="tasks-table-title">Water Conservation</div>
+              <div class="tasks-table-tags">
+                <span class="tasks-table-tag">Conservation</span>
+                <span class="tasks-table-tag easy">Easy</span>
+              </div>
+            </td>
+            <td class="tasks-table-points">
+              <span class="tasks-table-points-badge">10 pts</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <a href="tasks.html"><button class="view-all-btn" style="margin-top:24px;" >View All Tasks</button></a>
+  </section>
+  <!-- Leaderboard Section -->
+  <section class="leaderboard-section" id="leaderboardSection">
+    <div class="leaderboard-header">
+      <span class="leaderboard-trophy">🏆</span>
+      <span class="leaderboard-title">Top Scorers</span>
+      <div class="leaderboard-desc">See who's leading the roadmap</div>
+    </div>
+    <div class="leaderboard-list">
+      <div class="leaderboard-row first">
+        <div class="leaderboard-rank"><span>1</span></div>
+        <div class="leaderboard-user">
+          <span class="leaderboard-name">EcoHero23</span>
+          <span class="leaderboard-tasks">125 tasks completed</span>
+        </div>
+        <div class="leaderboard-points">
+          <span>1250</span>
+          <span class="leaderboard-points-label">points</span>
+        </div>
+      </div>
+      <div class="leaderboard-row second">
+        <div class="leaderboard-rank"><span>2</span></div>
+        <div class="leaderboard-user">
+          <span class="leaderboard-name">GreenMaster</span>
+          <span class="leaderboard-tasks">118 tasks completed</span>
+        </div>
+        <div class="leaderboard-points">
+          <span>1180</span>
+          <span class="leaderboard-points-label">points</span>
+        </div>
+      </div>
+      <div class="leaderboard-row third">
+        <div class="leaderboard-rank"><span>3</span></div>
+        <div class="leaderboard-user">
+          <span class="leaderboard-name">NatureLover</span>
+          <span class="leaderboard-tasks">105 tasks completed</span>
+        </div>
+        <div class="leaderboard-points">
+          <span>1050</span>
+          <span class="leaderboard-points-label">points</span>
+        </div>
+      </div>
+      <div class="leaderboard-row">
+        <div class="leaderboard-rank"><span>4</span></div>
+        <div class="leaderboard-user">
+          <span class="leaderboard-name">PlanetSaver</span>
+          <span class="leaderboard-tasks">98 tasks completed</span>
+        </div>
+        <div class="leaderboard-points">
+          <span>980</span>
+          <span class="leaderboard-points-label">points</span>
+        </div>
+      </div>
+      <div class="leaderboard-row">
+        <div class="leaderboard-rank"><span>5</span></div>
+        <div class="leaderboard-user">
+          <span class="leaderboard-name">EcoWarrior</span>
+          <span class="leaderboard-tasks">92 tasks completed</span>
+        </div>
+        <div class="leaderboard-points">
+          <span>920</span>
+          <span class="leaderboard-points-label">points</span>
+        </div>
+      </div>
+      <a href="leaderboard.html"><button class="leaderboard-btn"></a>
+        View Full Leaderboard
+        <span class="leaderboard-arrow">→</span>
+      </button>
+    </div>
+  </section>
+  <!-- Meet Our Team Section -->
+  <section class="team-section" id="teamSection">
+    <h2 class="team-title" id="about">Meet Our Team</h2>
+    <p class="team-desc">The passionate developers behind Trash2Treasure</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <img class="team-avatar team-avatar-down" src="bimal.png" alt="Bimal Rajbhandari" />
+        <div class="team-name">Bimal Rajbhandari</div>
+        <div class="team-role" style="color:#21b573;">Backend Developer</div>
+        <div class="team-bio">Student, Developer</div>
+        <div class="team-links">
+          <a href="#" title="GitHub" aria-label="GitHub"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="#111" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.84c.85.004 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .26.18.57.69.47C19.13 20.54 22 16.74 22 12.26 22 6.58 17.52 2 12 2Z"/></svg></a>
+          <a href="#" title="LinkedIn" aria-label="LinkedIn"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="#111" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.76 0-.97.78-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.78 1.76-1.75 1.76zm13.5 10.29h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-avatar" src="saps.jpg" alt="Sudeep Sapkota" />
+        <div class="team-name">Sudeep Sapkota</div>
+        <div class="team-role" style="color:#21b573;">Backend Developer</div>
+        <div class="team-bio">Student, Developer</div>
+        <div class="team-links">
+          <a href="#" title="GitHub" aria-label="GitHub"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="#111" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.84c.85.004 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .26.18.57.69.47C19.13 20.54 22 16.74 22 12.26 22 6.58 17.52 2 12 2Z"/></svg></a>
+          <a href="#" title="LinkedIn" aria-label="LinkedIn"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="#111" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.76 0-.97.78-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.78 1.76-1.75 1.76zm13.5 10.29h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-avatar" src="bibek.jpg" alt="Bibek Maharjan" />
+        <div class="team-name">Bibek Maharjan</div>
+        <div class="team-role" style="color:#21b573;">Frontend Developer</div>
+        <div class="team-bio">Student, UI/UX designer</div>
+        <div class="team-links">
+          <a href="#" title="GitHub" aria-label="GitHub"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="#111" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.84c.85.004 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .26.18.57.69.47C19.13 20.54 22 16.74 22 12.26 22 6.58 17.52 2 12 2Z"/></svg></a>
+          <a href="#" title="LinkedIn" aria-label="LinkedIn"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="#111" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.76 0-.97.78-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.78 1.76-1.75 1.76zm13.5 10.29h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg></a>
+        </div>
+      </div>
+      <div class="team-card">
+        <img class="team-avatar" src="sudeep.jpg" alt="Sudeep Khatri" />
+        <div class="team-name">Sudeep Khatri</div>
+        <div class="team-role" style="color:#21b573;">Full Stack Developer</div>
+        <div class="team-bio">Student, Developer</div>
+        <div class="team-links">
+          <a href="#" title="GitHub" aria-label="GitHub"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="#111" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.84c.85.004 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .26.18.57.69.47C19.13 20.54 22 16.74 22 12.26 22 6.58 17.52 2 12 2Z"/></svg></a>
+          <a href="#" title="LinkedIn" aria-label="LinkedIn"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="#111" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.76 0-.97.78-1.75 1.75-1.75s1.75.78 1.75 1.75c0 .97-.78 1.76-1.75 1.76zm13.5 10.29h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal (Login/Signup Popup) -->
+  <div class="modal-bg" id="modalBg">
+    <div class="t2t-modal" id="modal" tabindex="-1">
+      <button class="t2t-modal-close" id="closeModalBtn" aria-label="Close">&times;</button>
+      <div class="t2t-modal-content">
+        <div class="t2t-modal-title" id="modalTitle">Welcome to <span style="color:#21b573;">Trash2Treasure</span></div>
+        <div class="t2t-modal-tabs" id="modalTabs">
+          <button class="t2t-modal-tab active" id="tabLogin" type="button">Login</button>
+          <button class="t2t-modal-tab" id="tabSignup" type="button">Sign Up</button>
+          <div class="t2t-tab-indicator" id="tabIndicator"></div>
+        </div>
+        <!-- Login Form -->
+        <form class="t2t-modal-form" id="loginForm" autocomplete="off">
+          <div class="t2t-field">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+            <span class="t2t-focus-anim"></span>
+          </div>
+          <div class="t2t-field">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+            <span class="t2t-focus-anim"></span>
+          </div>
+          <button type="submit" class="t2t-modal-btn">Login</button>
+        </form>
+        <!-- Signup Form (hidden by default) -->
+        <form class="t2t-modal-form" id="signupForm" style="display:none;" autocomplete="off">
+          <div class="t2t-field">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" required>
+            <span class="t2t-focus-anim"></span>
+          </div>
+          <div class="t2t-field">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+            <span class="t2t-focus-anim"></span>
+          </div>
+          <div class="t2t-field">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+            <span class="t2t-focus-anim"></span>
+          </div>
+          <button type="submit" class="t2t-modal-btn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Section -->
+  <section class="contact-section" id="contactSection">
+    <h2 class="contact-title" id="contact">Get In Touch</h2>
+    <p class="contact-desc">Have questions? We'd love to hear from you!</p>
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <div class="contact-info-row">
+          <span class="contact-icon contact-icon-phone">
+            <!-- Phone SVG -->
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><circle cx="16" cy="16" r="16" fill="#b6f5d7" opacity="0.5"/><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C7.61 21 3 16.39 3 11a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z" fill="#21b573"/></svg>
+          </span>
+          <div>
+            <div class="contact-info-label">Phone</div>
+            <div class="contact-info-value">+977 9761806461</div>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <span class="contact-icon contact-icon-email">
+            <!-- Email SVG -->
+            <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><circle cx="16" cy="16" r="16" fill="#b6f5d7" opacity="0.5"/><path d="M20 8v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-2 0-6 5-6-5" stroke="#21b573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value">trash.two2.treasure@gmail.com</div>
+          </div>
+        </div>
+      </div>
+     <!--  <form action="https://formsubmit.co/trash.two2.treasure@gmail.com" method="POST" class="contact-form-card">
+ <input type="text" class="contact-input" placeholder="Your Name" required>
+        <input type="email" class="contact-input" placeholder="Your Email" required>
+        <textarea class="contact-input" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="contact-btn">Send Message</button>
+</form> -->
+     <form class="contact-form-card">
+        <div class="contact-form-title">Quick Message</div>
+        <input type="text" class="contact-input" placeholder="Your Name" required>
+        <input type="email" class="contact-input" placeholder="Your Email" required>
+        <textarea class="contact-input" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer-section">
+    <div class="footer-inner">
+      <span class="footer-logo">🌱 <b>Trash2Treasure</b></span>
+      <div class="footer-desc">Making environmental action fun and rewarding</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
